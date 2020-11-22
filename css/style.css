@@ -384,10 +384,10 @@ font-size: 17px;
 }
 
 .item span {
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
-.facebook {
+.facebook, .phone, .email {
   color:white;
   text-decoration: none;
 }
