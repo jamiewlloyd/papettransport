@@ -1,0 +1,564 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  width: 100%;
+  grid-template-rows: 300px auto;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #d2b53d;
+}
+
+.logo {
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  display: grid;
+  margin-bottom: -20px;
+  z-index: 20;
+  justify-items: center;
+  animation-name: transport;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  transform: translateX(-100%);
+}
+
+.logo2 {
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  display: grid;
+  margin-bottom: -20px;
+  z-index: 20;
+  justify-items: center;
+}
+
+.tail {
+  height: 40%;
+  transform: translate(-155px, -10px);
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.tail2 {
+  height: 40%;
+  transform: translate(-155px, -10px);
+  grid-row: 1;
+  grid-column: 1;
+  animation-name: wag;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 4;
+}
+.body {
+  height: 90%;
+  grid-row: 1;
+  grid-column: 1;
+  transform: translateX(60px);
+}
+
+.section {
+  background-color: white;
+ width: 100%;
+  height: 100%;
+  /* min-width: 400px; */
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr auto;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 60px;
+}
+
+.section h1 {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.about {
+  width: 80%;
+  padding: 10px;
+  z-index: 10;
+  color: black;
+  font-size: 17px;
+  grid-column: 1/3;
+}
+
+.about h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.button {
+  width: 250px;
+  height: 70px;
+  border: 2px solid black;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 30px;
+  background-color: #d2b53d;
+  grid-column: 3/4;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.btnlink {
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.form {
+
+width: 600px;
+grid-column: 1/4;
+grid-row:2;
+margin-top: 40px;
+margin-bottom: 70px;
+border: 3px solid black;
+padding: 20px;
+text-align: center;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  margin: 10px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+}
+
+.form h3 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.namegroup input{
+ width: 40%;
+}
+
+.formgroup input {
+  width: 88%;
+}
+
+.petdetails input {
+  width: 40%;
+}
+
+.petdetails select {
+  width: 44%;
+}
+
+.petdetails {
+  margin-bottom: 15px;
+}
+
+#medical {
+  width: 88%;
+}
+
+#anotherpet {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: #d2b53d;
+  font-weight: bold;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto 20px auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+    border-color: #d2b53d;
+    box-shadow: 0 0 10px #d2b53d;
+}
+
+.traveldetails input {
+  width: 40%;
+}
+.airport {
+  margin-top: 10px;
+}
+ .airport select {
+   width: 50%;
+ }
+
+#anotherpet:hover {
+  cursor: pointer;
+}
+
+.traveldate input {
+  width: 46%;
+}
+
+.traveldate {
+  margin-top: 10px;
+}
+
+textarea {
+  width: 90%;
+  height: 90px;
+  margin: 10px 0;
+  resize: none;
+}
+
+#submit {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: #d2b53d;
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+}
+
+#formstatus {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  transform: translateY(-100px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.success {
+  background-color: #2ceead;
+}
+
+.error {
+  background-color: #e26b4d;
+}
+
+#footer {
+  height: 150px;
+ width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 250px;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.icon {
+  height: 90%;
+  padding-left: 20px;
+  grid-column: 1;
+  justify-self: left;
+}
+
+.contact {
+display: grid;
+justify-items: left;
+align-items: center;
+grid-template-rows: 35px 35px 35px;
+color: white;
+grid-column: 3;
+font-size: 12px;
+justify-self:right;
+padding-right: 20px;
+}
+
+.item {
+  display: grid;
+justify-items: left;
+align-items: center;
+grid-template-columns: auto auto;
+font-size: 17px;
+}
+
+.item span {
+  padding: 0 5px;
+}
+
+.facebook {
+  color:white;
+  text-decoration: none;
+}
+
+.formfoot {
+  margin-top: -100px;
+}
+
+@keyframes transport {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes wag {
+  50% {
+    transform: translate(-162px, -3px) rotateZ(-10deg);
+  }
+  100% {
+    transform: translate(-155px, -10px) rotateZ(0deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section h1 {
+    font-size: 45px;
+    width: 100%;
+  }
+  .about {
+    grid-column: 1/4;
+    margin-top: 20px;
+  }
+    
+  .about h2 {
+    font-size: 27px;
+  }
+  .btnlink{
+    grid-column: 1/4;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section h1 {
+    font-size: 35px;
+  }
+
+  .about {
+    font-size:medium;
+  }
+    
+  .about h2 {
+    font-size: 24px;
+  }
+  .form {
+    width: 400px;
+  }
+  .namegroup input{
+    width: 80%;
+  }
+  
+  .formgroup input {
+    width: 80%;
+  }
+  
+  .petdetails input {
+    width: 80%;
+  }
+  
+  .petdetails select {
+    width: 88%;
+  }
+  .petdetails {
+    margin-bottom: 15px;
+  }
+  #medical {
+    width: 80%;
+  }
+  #anotherpet {
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .traveldetails input {
+    width: 80%;
+  }
+  .airport {
+    margin-top: 10px;
+  }
+    .airport select {
+      width: 88%;
+    }
+  #anotherpet:hover {
+    cursor: pointer;
+  }    
+  .traveldate input {
+    width: 80%;
+  }    
+  textarea {
+    width: 85%;
+  }
+  #submit {
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+  }
+  #footer {
+    grid-template-columns: auto auto 220px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section h1 {
+    font-size: 30px;
+    width: 100%;
+  } 
+  .about h2 {
+    font-size: 20px;
+  }
+  body {
+    grid-template-rows: 200px auto;
+  }
+.logo {
+  margin-bottom: -30px;
+}
+  .logo2 {
+    transform: translateX(-6%);
+    margin-bottom: -30px;
+  }
+  
+  .tail {
+    transform: translate(-85px, -7px);
+  }
+  
+  .tail2 {
+    transform: translate(-85px, -7px);
+  }
+  @keyframes transport {
+    100% {
+      transform: translateX(-6%);
+    }
+  }
+  @keyframes wag {
+    50% {
+      transform: translate(-90px, -2px) rotateZ(-10deg);
+    }
+    100% {
+      transform: translate(-85px, -7px) rotateZ(0deg);
+    }
+  }
+  .form {
+    width: 300px;
+  }
+  .form h3 {
+    font-size: 20px;
+  }
+  
+  .about {
+    margin-top: 10px;
+  }
+.icon {
+  height: 50%
+}
+#footer {
+  grid-template-columns: 120px auto;
+}
+.contact{
+  grid-column: 2;
+}
+.item {
+  font-size: 14px;
+}
+}
+

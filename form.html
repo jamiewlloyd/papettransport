@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="We are a pet transportation company who aims to help you get your pets from A to B. 
+    Whatever your pet transportation needs, PA can help!">
+    <meta name="author" content="Jamie">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Free Transport Quotation</title>
+</head>
+
+<body>
+    <!-- Logo split for animation  -->
+    <div class="logo2">
+        <img class="tail2" src="images/logotail.png" alt="PA logo section">
+        <img class="body" src="images/logobodypng.png" alt="PA logo section">
+    </div>
+    <div class="section">
+        <h1>Free Quotation</h1>
+        <!-- Form start -->
+        <form id="form" class="form" action="https://formspree.io/f/xdopdvwn" method="POST">
+            <h3>Your Details</h3>
+            <div class="namegroup">
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required> <input type="text"
+                    id="lastname" name="lastname" placeholder="Surname" required>
+            </div>
+            <div class="formgroup">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="number" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            <h3>Pet Details</h3>
+            <!-- Container for inserting HTML in javascript -->
+            <div id="petcontainer">
+                <div class="petdetails">
+                    <!-- inner HTML for javascript  -->
+                    <input type="text" id="pettype" name="pet_type" placeholder="Type (eg. dog cat)" required>
+                    <input type="text" id="petname" name="pet_name" placeholder="Name" required>
+                    <input type="text" id="petbreed" name="pet_breed" placeholder="Breed" required>
+                    <input type="number" id="petage" name="pet_age" placeholder="Age" required>
+                    <select id="petsex" name="pet_sex" required>
+                        <option value="pleaseselect" disabled selected>Select Sex</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <input type="number" id="petweight" name="pet_weight" placeholder="Pet weight (kg)" required>
+                    <input type="text" id="medical" name="medical" placeholder="Please note any medical conditions">
+                    <hr>
+                    <!-- inner HTML end  -->
+                </div>
+
+            </div>
+            <div id="anotherpet">Additional Pet</div>
+            <h3>Travel Details</h3>
+            <div class="traveldetails">
+                <input type="text" id="departure" name="departure" placeholder="Departure Postcode" required>
+                <input type="text" id="destination" name="destination" placeholder="Destination Postcode" required>
+            </div>
+            <div class="airport">
+                <label for="airport">Is this an airport pickup or drop off?</label>
+                <br><select id="airport" name="is_airport" required>
+                    <!-- Used a select rather than radial or checkbox for styling -->
+                    <option value="pleaseselect" disabled selected>Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="traveldate">
+                <label for="traveldate">Expected travel date</label>
+                <br><input type="date" id="traveldate" name="traveldate" required>
+            </div>
+            <h3>Any other information</h3>
+            <textarea id="information" name="information"
+                placeholder="Please provide us with any other important information"></textarea><br>
+            <input type="submit" id="submit" value="send">
+
+        </form>
+        <!-- Form end -->
+    </div>
+    <!-- status bar to show on form submission. class to be added by javascript  -->
+    <div id="formstatus"></div>
+    <footer id="footer" class="formfoot">
+        <img class="icon" src="images/pa_icon.png" alt="Footer Logo">
+        <div class="contact">
+            <div class="item phone"><span class="material-icons">
+                    call
+                </span>
+                <p>01765 6787 665</p>
+            </div>
+            <div class="item email"><span class="material-icons">
+                    email
+                </span>
+                <p>paforpets@gmail.com</p>
+            </div>
+            <a href="" class="item facebook"><span class="material-icons">
+                    facebook
+                </span>
+                <p>@paforpets</p>
+            </a>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+
+
+</html>
