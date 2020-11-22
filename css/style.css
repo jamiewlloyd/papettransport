@@ -367,7 +367,7 @@ textarea {
 display: grid;
 justify-items: left;
 align-items: center;
-grid-template-rows: 35px 35px 35px;
+grid-template-rows: 30px 30px 30px;
 color: white;
 grid-column: 3;
 font-size: 12px;
