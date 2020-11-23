@@ -91,13 +91,14 @@ video {
   vertical-align: baseline;
 }
 
-body {
+.wrapper {
   display: grid;
   align-items: center;
   justify-items: center;
+  min-height: 100vh;
   height: 100vh;
   width: 100%;
-  grid-template-rows: 300px auto;
+  grid-template-rows: 300px auto 150px;
   font-family: "Ubuntu", sans-serif;
   background-color: #d2b53d;
 }
@@ -223,7 +224,7 @@ width: 600px;
 grid-column: 1/4;
 grid-row:2;
 margin-top: 40px;
-margin-bottom: 70px;
+margin-bottom: 30px;
 border: 3px solid black;
 padding: 20px;
 text-align: center;
@@ -332,7 +333,7 @@ textarea {
   height: 50px;
   width: 100%;
   position: relative;
-  transform: translateY(-100px);
+  transform: translateY(-200px);
   display: grid;
   justify-content: center;
   align-content: center;
@@ -393,7 +394,7 @@ font-size: 17px;
 }
 
 .formfoot {
-  margin-top: -100px;
+ grid-row: 3;
 }
 
 @keyframes transport {
@@ -507,7 +508,7 @@ font-size: 17px;
   .about h2 {
     font-size: 20px;
   }
-  body {
+ .wrapper {
     grid-template-rows: 200px auto;
   }
 .logo {
