@@ -1,7 +1,12 @@
 const pet = document.getElementById("anotherpet");
+const footerIcon = document.querySelector(".icon");
+const formLogo = document.querySelector(".logo2");
 
 pet.addEventListener("click", anotherPet);
+footerIcon.addEventListener("click", goHome);
+formLogo.addEventListener("click", goHome);
 
+// fucntion to check if pet details fields are compelted. Then will add more fields on click if requirements are met 
 function anotherPet(event) {
     event.preventDefault();
     let parent = event.target.previousElementSibling;
@@ -35,7 +40,12 @@ function anotherPet(event) {
     }
 }
 
-// Code from formpree edited to include class for status bar and remove button styling 
+// function to allow logo and icon on form page link back to home page 
+function goHome() {
+    window.location = 'index.html'
+}
+
+// Code from formspree edited to include class for status bar and remove button styling 
 window.addEventListener("DOMContentLoaded", function () {
 
     var form = document.getElementById("form");
