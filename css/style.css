@@ -132,14 +132,14 @@ video {
 }
 
 .tail {
-  height: 40%;
+  height: 22%;
   transform: translate(-155px, -10px);
   grid-row: 1;
   grid-column: 1;
 }
 
 .tail2 {
-  height: 40%;
+  height: 22%;
   transform: translate(-155px, -10px);
   grid-row: 1;
   grid-column: 1;
@@ -150,7 +150,7 @@ video {
   animation-iteration-count: 4;
 }
 .body {
-  height: 90%;
+  height: 50%;
   grid-row: 1;
   grid-column: 1;
   transform: translateX(60px);
@@ -359,7 +359,7 @@ textarea {
 }
 
 .icon {
-  height: 90%;
+  height: 100px;
   padding-left: 20px;
   grid-column: 1;
   justify-self: left;
@@ -503,6 +503,15 @@ font-size: 17px;
 }
 
 @media screen and (max-width: 500px) {
+  .body {
+    height: 30%;
+  }
+  .tail {
+    height: 15%;
+  }
+  .tail2 {
+    height: 15%;
+  }
   .section h1 {
     font-size: 30px;
     width: 100%;
@@ -522,11 +531,11 @@ font-size: 17px;
   }
   
   .tail {
-    transform: translate(-85px, -7px);
+    transform: translate(-74px, -13px);
   }
   
   .tail2 {
-    transform: translate(-85px, -7px);
+    transform: translate(-74px, -13px);
   }
   @keyframes transport {
     100% {
@@ -535,10 +544,10 @@ font-size: 17px;
   }
   @keyframes wag {
     50% {
-      transform: translate(-90px, -2px) rotateZ(-10deg);
+      transform: translate(-79px, -8px) rotateZ(-10deg);
     }
     100% {
-      transform: translate(-85px, -7px) rotateZ(0deg);
+      transform: translate(-74px, -13px) rotateZ(0deg);
     }
   }
   .form {
@@ -552,7 +561,7 @@ font-size: 17px;
     margin-top: 10px;
   }
 .icon {
-  height: 50%
+  height: 100px;
 }
 #footer {
   grid-template-columns: 120px auto;
